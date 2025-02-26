@@ -7,5 +7,9 @@ let int = setInterval(blurring, 300)
 
 function blurring(){
     load = load + 1
+    if (load > 99){
+        clearInterval(int)
+    }
     loadText.innerText = `${load}% `
+    bg.style.filter = "blur(0px)"
 
