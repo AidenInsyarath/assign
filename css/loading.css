@@ -14,7 +14,7 @@ body{
 }
 
 .bg{
-    background-image: url('../image/wall.jpg');
+    background-image: url('../image/great.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -22,4 +22,9 @@ body{
     height: 100vh;
     postion: absolute
     filter: blur(50px);
+    z-index: -1;
+}
+
+.loading-text{
+
 }
