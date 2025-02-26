@@ -10,7 +10,7 @@ blurring();
 
 function blurring(){
     load = load + 1
-    if (load > 99){
+    if (load >= 100){
         clearInterval(int)
     }
     loadText.innerText = `${load}% `
