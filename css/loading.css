@@ -13,17 +13,17 @@ body{
 
 }
 
-/* .bg{
-    background-image: url('../image/great.jpg');
+.bg{
+    background-image: url('../images/great.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
-    postion: absolute
+    postion: absolute;
     filter: blur(50px);
     z-index: -1;
-} */
+}
 
 .loading-text{
     font-size: 50px;
