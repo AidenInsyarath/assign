@@ -26,5 +26,7 @@ body{
 }
 
 .loading-text{
-
+    font-size: 50px;
+    color: #ffff;
+    opacity: .2;
 }
