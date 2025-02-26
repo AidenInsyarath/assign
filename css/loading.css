@@ -14,9 +14,12 @@ body{
 }
 
 .bg{
-    background-image: url('../image/image great wall of china.jpg');
+    background-image: url('../image/wall.jpg');
     background-size: cover;
-    background-
+    background-position: center;
+    background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
+    postion: absolute
+    filter: blur(50px);
 }
