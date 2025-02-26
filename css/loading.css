@@ -14,7 +14,7 @@ body{
 }
 
 .bg{
-    background-image: url('image/image great wall of china.jpg') no-repeat center
+    background-image: url('../image/image great wall of china.jpg') no-repeat center
     center/cover;
     width: 100vw;
     height: 100vh;
