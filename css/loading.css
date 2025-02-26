@@ -20,7 +20,7 @@ body{
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
-    postion: absolute;
+    position: absolute;
     filter: blur(50px);
     z-index: -1;
 }
