@@ -15,9 +15,7 @@ body {
 
 .search {
     position: relative;
-    height: 500px;
-    width: 500px
-    
+    height: 50px;
 }
 
 
@@ -31,7 +29,7 @@ body {
     transition: width 1s ease;
 }
 
-.search .btn {
+.btn {
     background-color: white;
     border: 0;
     font-size: 24px;
@@ -45,13 +43,14 @@ body {
 }
 
 
-.search.active.input {
+.search.active .input {
     width: 200px;
 }
 
-.search.active .btn{
+.search.active .btn {
     transform: translateX(198px);
 }
+
 
 .btn:focus, .input:focus {
     outline: none;
