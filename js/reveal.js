@@ -1,12 +1,26 @@
-const panel = document.querySelectorAll('.panel')
+const element3 = document.getElementById("element3");
+const panels = document.querySelectorAll('.panel')
 
-panel.addEventListener("mouseover", ()=>{
-    panel.style.color = "black"
-    panel.style.backgroundColor= "blue"
+let positionY = 0;
+let positionX = 0;
+let movement = 16;
+
+document.addEventListener("keyup", (event)=>{
+    console.log(event.key);
+    if(event.key == "ArrowUp"){
+        positionY -= movement;
+    }
+    if(event.key == "ArrowDown"){
+        positionY += movement;
+    }
+    if(event.key == "ArrowRight"){
+        positionX -= movement;
+    }
+    if(event.key == "ArrowLeft"){
+        positionX += movement;
+    }
+    element3.style.right = `${positionX}px`;
+    element3.style.top = `${positionY}px`;
 })
 
 
-panel.addEventListener("mouseout", ()=>{
-    panel.style.color = "white"
-    panel.style.backgroundColor= "red"
-})

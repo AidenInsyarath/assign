@@ -2,26 +2,43 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     display: flex;
     height: 100vh;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     margin: 0;
-
+    background-color: #999999;
 }
-
-.container {
-    display: flex;
-    width: 90vw;
-}
-.panel {
+.box{
+    background-image: url('../images/reveal.jpg');
+    color: white;
     width: 300px;
-    height: 100px;
+    height: 200px;
     padding: 10px;
+    margin: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
+}
+.photo
+{
+    background-image: url('../images/great.jpg');
+    color: white;
+    width: 300px;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+#element3{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
 }
 
