@@ -46,3 +46,17 @@ h1 {
     list-style-type: none;
     padding: 0;
 }
+
+.insects-list li {
+    margin: 10px;
+}
+
+.choose-insect-btn {
+    background-colr: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: inherit;
+    width: 150px;
+    height 150px;
+}
