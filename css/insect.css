@@ -1,2 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Emblema+One&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #516dff;
+    color: #ffffff;
+    font-family: 'Press Start 2p', sans-serif;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
