@@ -1,6 +1,5 @@
 
-
-@import url('https://fonts.googleapis.com/css2?family=Emblema+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Emblema+One&display=swap');
 
 
 *{
@@ -19,7 +18,7 @@ body {
 }
 
 .btn {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Emblema One", system-ui;
     background-color: rebeccapurple;
     margin: 10px;
     color: rgb(255, 255, 255);
