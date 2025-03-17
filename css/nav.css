@@ -1,30 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Emblema+One&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-*{
+
+* {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
+
 
 }
+
 
 body {
     font-family: "Emblema One", system-ui;
     color: rgb(22,22,22);
     padding-bottom: 50px;
+
+
 }
+
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.nav{
+
+.nav {
     position: fixed;
     background-color: rgb(22,22,22);
     top: 0;
-    left: 0;
-    right: 0;
+    left: 0px;
+    right: 0px;
+    z-index: 1000;
 }
+
 
 .nav .container {
     display: flex;
@@ -32,6 +42,8 @@ body {
     align-items: center;
     padding: 20px 0;
 }
+
+
 .nav ul {
     display: flex;
     list-style-type: none;
@@ -39,45 +51,51 @@ body {
     justify-content: center;
 }
 
+
 .nav a {
     color: #ffffff;
     padding: 7px 15px;
     text-decoration: none;
+
+
 }
+
+
 .nav.active {
     background-color: white;
+
+
 }
 
 
 .nav.active a {
     color: black;
-
 }
+
 
 .nav.active .container {
     padding: 10px 0;
-}
 
+
+}
 .nav a.current, .nav a:hover {
     color: #c0392b;
     font-weight: bold;
 }
 .hero {
     background-image: url('../images/Tokyo.avif');
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom center;
-    background-repeat: no-repeat;
-    height: 200vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     margin-bottom: 20px;
     color: rgb(255,255,255);
-
-
+    z-index: -2;
 }
-
 
 
 .hero::before {
@@ -87,29 +105,40 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.9);
-    z-index: -1;
+    background-color: rgba(0,0,0,0.5);
+
+
 }
 
-.hero h1 {
+
+.hero h1{
     font-size: 46px;
     margin: -20px 0 20px;
     z-index: 100;
 }
 
+
 .hero p {
     font-size: 20px;
     letter-spacing: 1px;
+
+
 }
 
-.content h2, .conetent h3 {
+
+.content h2, .content h3 {
     font-size: 150%;
     margin: 20px 0;
-
 }
 
-.content p{
+
+.content p {
     color: rgb(55,55,55);
     line-height: 30px;
     letter-spacing: 1.2px;
+
+
 }
+
+
+
