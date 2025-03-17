@@ -1,6 +1,6 @@
 const nav = document.querySelector('.nav')
 
-window.addEventLister('scroll', () => {
+window.addEventListener('scroll', () => {
     if (windo.scrollY > 160){
         nav.classList.add('active)
     }
