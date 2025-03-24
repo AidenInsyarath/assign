@@ -109,7 +109,7 @@ h1 {
 }
 
 .message.visible {
-    transform: translate(-50%, -150%);
+    transform: translate(-50%, 150%);
     opacity: 1;
 }
 
