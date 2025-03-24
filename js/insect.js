@@ -61,3 +61,23 @@ function getRandomLocation(){
     const height = window.innerHeight
     console.log(Math.random())
 }
+
+function catchInsect() {
+    let insect = event.target;
+    increaseScore()
+    insect.classList.add('caught')
+    setTimeout( () => insect.remove)
+}
+
+
+
+
+
+
+
+function increaseScore() {
+    score = score + 1
+    if(score == 10){
+        message.classList.add('visable')
+    }
+}
