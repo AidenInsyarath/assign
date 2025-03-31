@@ -1,0 +1,101 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+    color: #333;
+    
+}
+
+header {
+    background: #0073e6;
+    color: white;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #0073e6;
+    font-weight: bold;
+}
+
+#darkModeToggle {
+    background: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+#darkModeToggle:hover {
+    background: #ddd;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: white;
+}
+
+.dark-mode a {
+    color: #ffcc00;
+}
+.search {
+    position: relative;
+    height: 50px;
+}
+
+
+.search .input{
+    height: 50px;
+    width: 50px;
+    font-size: 18px;
+    padding: 15px;
+    border: 0;
+    background-color: white;
+    transition: width 1s ease;
+}
+
+.btn {
+    background-color: white;
+    border: 0;
+    font-size: 24px;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 1s ease;
+}
+
+
+.search.active .input {
+    width: 200px;
+}
+
+.search.active .btn {
+    transform: translateX(198px);
+}
+
+
+.btn:focus, .input:focus {
+    outline: none;
+}

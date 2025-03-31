@@ -10,6 +10,7 @@ body {
     font-family: 'Press Start 2p', sans-serif;
     height: 100vh;
     margin: 0;
+    overflow: hidden;
     text-align: center;
 }
 
@@ -56,7 +57,7 @@ h1 {
 }
 
 .choose-insect-btn {
-    background-colr: transparent;
+    background-color: transparent;
     border: 2px solid #ffffff;
     color: #ffffff;
     cursor: pointer;
@@ -85,18 +86,30 @@ h1 {
     top: 20px;
 }
 
+a {
+    color: white;
+}
 
+.choose-insect-btn:hover {
+    background-color: #ffffff;
+    color: #516dff;
+}
 
-
-
+.time {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
 .score {
+    position: absolute;
+    top: 20px;
     right: 20px;
 }
 
 .message {
     line-height: 1.7;
     background-color: rgba(0,0,0,0.5);
-    wifth: 100%;
+    width: 100%;
     padding: 20px;
     z-index: 100;
     text-align: center;
@@ -105,7 +118,7 @@ h1 {
     left: 50%;
     transform: translate(-50%, -150%);
     opacity: 0;
-    transition: transform 1s ease-in;
+    transition: transform 0.4s ease-in;
 }
 
 .message.visible {
