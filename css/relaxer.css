@@ -7,7 +7,7 @@
 body {
     background: url('../images/relax.avif'); no-repeat center center/cover;
     color: white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Emblema One", system-ui;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -15,7 +15,7 @@ body {
     margin: 0;
 }
 
-.cotainer {
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -50,8 +50,8 @@ body {
     z-index: -2;
     border-radius: 50%;
     position: absolute;
-    top: -10;
-    left: -10;
+    top: -10px;
+    left: -10px;
 }
 
 
@@ -61,4 +61,49 @@ body {
     width: 20px;
     border-radius: 50%;
     display: block;
+}
+
+.pointer-container {
+    position: absolute;
+    top: -40px;
+    left: 140px;
+    width: 20px;
+    height: 190px;
+    animation: rotate 7.5s linear infinite;
+    transform-origin: bottom center;
+}
+
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.container.grow {
+    animation: grow 3s linear forwards;
+}
+
+@keyframes grow {
+    from {
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.2);
+    }
+}
+
+.container.shrink {
+    animation: shrink 3s linear forwards;
+}
+
+@keyframes shrink {
+    from{
+        transform: scale(1.2);
+    }
+    to{
+        transform: scale(1)
+    }
 }
