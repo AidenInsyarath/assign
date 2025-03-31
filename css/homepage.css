@@ -10,7 +10,12 @@ body {
     text-align: center;
     background-color: #f4f4f4;
     color: #333;
-    
+    display: flex; /* uses Flexbox which responds to different screen sizes  */
+    align-items: center; /*Vertically center*/
+    justify-content: center; /* Horizontally center */
+    height: 100vh; /* Setting body height to 100% */
+    margin: 0;
+
 }
 
 header {
@@ -34,32 +39,12 @@ nav ul li a {
     color: #0073e6;
     font-weight: bold;
 }
-
-#darkModeToggle {
-    background: white;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 10px;
-    border-radius: 5px;
-}
-
-#darkModeToggle:hover {
-    background: #ddd;
-}
-
-.dark-mode {
-    background-color: #333;
-    color: white;
-}
-
-.dark-mode a {
-    color: #ffcc00;
-}
 .search {
     position: relative;
-    height: 50px;
+    height: 200px;
+    right: 450px;
+
+
 }
 
 
