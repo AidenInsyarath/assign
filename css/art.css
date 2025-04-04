@@ -115,7 +115,7 @@
 .body1 {
     height: 230px;
     width: 140px;
-    background-color: red;
+    background-color: black;
     border-radius: 30%;
     position: absolute;
     justify-content: center;
@@ -125,6 +125,8 @@
     left: 43.5%;
     z-index: -3;
 }
+
+
 
 .leg1 {
     height: 180px;
@@ -137,6 +139,20 @@
     display: flex;
     top: 70%;
     left: 42.5%;
+    z-index: -4;
+}
+
+.leg2 {
+    height: 180px;
+    width: 75px;
+    background-color: blue;
+    border-radius: 50%;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    top: 70%;
+    left: 49%;
     z-index: -4;
 }
 
