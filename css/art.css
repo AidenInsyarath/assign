@@ -1,11 +1,157 @@
 
-
-.sun {
+.body {
+    background-color: tan;
+}
+.face {
     height: 300px;
     width: 300px;
-    background-color: yellow;
+    background-color: tan;
     border-radius: 50%;
     position: absolute;
-    top: 30px;
-    right: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    top: 10%;
+    left: 42%;
+    height: 180px;
+    width: 180px;
+    z-index: -3;
 }
+
+.eye1 {
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    top: 20%;
+    left: 44%;
+    height: 35px;
+    width: 40px;
+    z-index: -1;
+}
+
+.eye2 {
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    top: 20%;
+    left: 50%;
+    height: 35px;
+    width: 40px;
+    z-index: -1;
+}
+
+.pupil1 {
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    top: 21.5%;
+    left: 44.9%;
+    height: 12px;
+    width: 16px;
+}
+.pupil2 {
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    top: 21.5%;
+    left: 50.9%;
+    height: 12px;
+    width: 16px;
+}
+
+.mouth{
+    height: 40px;
+    width: 80px;
+    background-color: pink;
+    border-radius: 50%;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    top: 30%;
+    left: 45.7%;
+    z-index: -1;
+}
+
+.teeth1 {
+    height: 10px;
+    width: 47px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    border-radius: 30%;
+    top: 30.2%;
+    left: 46.9%;
+}
+.teeth2 {
+    height: 10px;
+    width: 51px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    border-radius: 30%;
+    top: 34.7%;
+    left: 46.8%;
+    z-index: -1;
+}
+
+.body1 {
+    height: 230px;
+    width: 140px;
+    background-color: red;
+    border-radius: 30%;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    top: 39.6%;
+    left: 43.5%;
+    z-index: -3;
+}
+
+.leg1 {
+    height: 180px;
+    width: 75px;
+    background-color: blue;
+    border-radius: 50%;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    top: 70%;
+    left: 42.5%;
+    z-index: -4;
+}
+
+/*.tongue {
+    height:40px;
+    width: 25px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    top: 31%;
+    left: 47.7%;
+}
+
+
