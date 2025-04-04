@@ -126,7 +126,19 @@
     z-index: -3;
 }
 
-
+.arm1 {
+    height: 100px;
+    width: 75px;
+    background-color: blue;
+    border-radius: 50%;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    top: 50%;
+    left: 42.5%;
+    z-index: -4;
+}
 
 .leg1 {
     height: 180px;
