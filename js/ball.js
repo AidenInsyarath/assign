@@ -22,7 +22,9 @@ let ScoreXPosition = 570//Display the score and increase the score by 1 everytim
 let ScoreYPosition = 20
 let ScoreWidth = 200
 let ScoreHeight = 110
-let level = 1 //Display the level and increase the level by one everytime the score increases by 10
+let score = 0
+let level = 1
+let gameOver = false //Display the level and increase the level by one everytime the score increases by 10
 //As levels increase increase the ball speed
 //if ball gets past your padel, end the game.
 //make the ball stop or dispear and then let the user know the game is over.
@@ -55,14 +57,14 @@ function moveBall() {
         (ballXDirection == -1)
     ){
         ballXDirection  = ballXDirection * -1
+        updateScore()
+     }
+     if (ballXPosition <= 0) {
+        endGame()
     }
-
-    if(
-        (ballBottom >= LPaddleTop) &&
-        (ballTop <=LPaddleBottom) &&
-        (ballLeft <= LPaddleRight) &&
-        (ballXDirection == -1)
-    )
+    function moveBall() {
+        if (gameOver) return;
+    }
 }
 
 createLPaddle()
@@ -91,14 +93,17 @@ function createLPaddle() {
 }
 
 function createScore() {
-    Score.style.height = `${ScoreHeight}px`
-    Score.style.width = `${ScoreWidth}px`
-    Score.style.borderRadius = "50%"
-    Score.style.backgroundColor = "green"
     Score.style.position = "absolute"
     Score.style.top = `${ScoreYPosition}px`
     Score.style.left = `${ScoreXPosition}px`
+    Score.style.color = "blue"
+    Score.style.fontSize = "24px"
+    Score.style.left = "50%"
+
+
+    Score.innerText = `Score: ${score} | Level: ${level}`
 }
+
 
 
 wKey = false
@@ -141,4 +146,25 @@ function animate() {
 }
 animate()
 
+function updateScore() {
+    score = score + 1
+    if (score % 10 === 0) {
+        level = level + 1
+        ballSpeed += 1 // Increase ball speed with level
+    }
+    Score.innerText = `Score: ${score} | Level: ${level}`
+}
 
+function endGame() {
+    gameOver = true
+    ball.style.display = 'none'
+    const gameOverMsg = document.createElement('div')
+    gameOverMsg.innerText = "Game Over!"
+    gameOverMsg.style.position = "absolute"
+    gameOverMsg.style.top = `${windowHeight / 2 - 40}px`
+    gameOverMsg.style.left = `${windowWidth / 2 - 100}px`
+    gameOverMsg.style.left = "50%"
+    gameOverMsg.style.fontSize = "40px"
+    gameOverMsg.style.color = "red"
+    document.body.appendChild(gameOverMsg)
+}
