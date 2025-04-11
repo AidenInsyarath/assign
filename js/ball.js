@@ -148,9 +148,9 @@ animate()
 
 function updateScore() {
     score = score + 1
-    if (score % 10 === 0) {
+    if (score % 10 == 0) {
         level = level + 1
-        ballSpeed += 1 // Increase ball speed with level
+        ballSpeed = ballSpeed + 1 
     }
     Score.innerText = `Score: ${score} | Level: ${level}`
 }
