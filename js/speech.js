@@ -20,27 +20,27 @@ const data = [
         text: "I'm Tired"
     },
     {
-        image: '../hurt.jpg",
+        image: '../hurt.jpg',
         text: "I'm Hurt"
     },
     {
-        image: '../happy.jpg",
+        image: '../happy.jpg',
         text: "I'm Happy"
     },
     {
-        image: '../angry.jpg",
+        image: '../angry.jpg',
         text: "I'm Angry"
     },
     {
-        image: '../sad.jpg",
+        image: '../sad.jpg',
         text: "I'm Sad"
     },
     {
-        image: '../scared.jpg",
+        image: '../scared.jpg',
         text: "I'm Scared"
     },
     {
-        image '../outside.jpg",
+        image '../outside.jpg',
         text:"I Want To Go Outside"
     },
     {
