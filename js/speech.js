@@ -40,16 +40,16 @@ const data = [
         text: "I'm Scared"
     },
     {
-        image '../outside.jpg',
+        image: '../outside.jpg',
         text:"I Want To Go Outside"
     },
     {
-        image:'../home.jpg',
-        text "I Want To Go Home"
+        image: '../home.jpg',
+        text: "I Want To Go Home"
     },
     {
         image: '../school.jpg',
-        text "I want To Go To School"
+        text: "I want To Go To School"
     },
     {
         image: '../grandma.jpg',
@@ -60,5 +60,11 @@ const data = [
 data.forEach(createBox)
 
 function createBox(item) {
-    console.log(item)
+    const box = document.createElement('div')
+    box.classList.add('box')
+    box.innerHTML = `
+        <img src="${item.image}" alt="${item.text}" />
+        <p class="info"> ${item.text} </p>
+    `
+    main.appendCild(box)
 }
