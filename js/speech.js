@@ -53,6 +53,12 @@ const data = [
     },
     {
         image: '../grandma.jpg',
-        text: "
+        text: "I Want To Go To Grandmas"
     }
 ]
+
+data.forEach(createBox)
+
+function createBox(item) {
+    console.log(item)
+}
