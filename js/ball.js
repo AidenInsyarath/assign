@@ -9,7 +9,7 @@ const Score = document.createElement('div')
 document.body.appendChild(Score)
 let LPaddleWidth = 10
 let LPaddleHeight = 100
-let LPaddleSpeed = 10
+let LPaddleSpeed = 15
 let LPaddleXPosition = 70
 const ballRadius = 20
 let LPaddleYPosition = windowHeight / 2 - LPaddleHeight / 2
@@ -150,7 +150,7 @@ function updateScore() {
     score = score + 1
     if (score % 10 == 0) {
         level = level + 1
-        ballSpeed = ballSpeed + 1 
+        ballSpeed = ballSpeed + 1
     }
     Score.innerText = `Score: ${score} | Level: ${level}`
 }
