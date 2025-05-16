@@ -5,7 +5,6 @@ const readBtn = document.getElementById('read')
 const toggleBtn = document.getElementById('toggle')
 const closeBtn = document.getElementById('close')
 
-data[0].image
 const data = [
     {
         image:'../drink.jpg',
@@ -66,5 +65,5 @@ function createBox(item) {
         <img src="${item.image}" alt="${item.text}" />
         <p class="info"> ${item.text} </p>
     `
-    main.appendCild(box)
+    main.appendChild(box)
 }
