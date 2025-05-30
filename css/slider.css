@@ -22,7 +22,7 @@ body {
     height: 100vh;
     width: 35%;
     position: absolute;
-    top: 0;
+    top: -100%;
     left: 0;
     transistion: transform 0.5s ease-in-out;
 }
@@ -89,7 +89,7 @@ button:focus {
 }
 
 .slider-container .action-buttons .up-button {
-    transform: translateY(-100%);
+    transform: translate(-100%);
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
