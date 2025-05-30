@@ -4,3 +4,18 @@
  const leftSide = document. querySelector('left-side')
  const slidesLength = rightSide.querySelectorAll('div').length
  upButton.addEventListener('click', () => changeSlide('up'))
+
+leftSide.style.top 
+
+ upButton. addEventListener('click', () => changeSlide('up'))
+downButton. addEventListener('click', () => changeSlide('down'))
+
+function changeSlide (direction) {
+    if (direction == 'up') {
+        console.log('up')
+    }
+    else {
+        console.log('down')
+    }
+}
+
